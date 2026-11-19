@@ -1,0 +1,13 @@
+algorithm,variant,delta_f1_vs_full,p_wilcoxon
+INFO,UBF (sign mapping + diverse init + memo + local search),0.0,
+INFO,no elite local search,-0.003,0.7566
+INFO,no memoisation,0.0,1.0
+INFO,stochastic S2 sigmoid instead of sign mapping,-0.0046,0.0638
+INFO,stochastic TV-sigmoid instead of sign mapping,-0.0036,0.1725
+INFO,uniform instead of density-diverse init,0.0006,0.6955
+HOA,UBF (sign mapping + diverse init + memo + local search),0.0,
+HOA,no elite local search,-0.0009,0.8429
+HOA,no memoisation,0.0,1.0
+HOA,stochastic S2 sigmoid instead of sign mapping,-0.0035,0.1677
+HOA,stochastic TV-sigmoid instead of sign mapping,-0.0054,0.0421
+HOA,uniform instead of density-diverse init,-0.0008,0.5249

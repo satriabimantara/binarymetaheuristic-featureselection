@@ -1,0 +1,11 @@
+algorithm,variant,delta_f1_vs_full,p_wilcoxon
+BEO,S2 sigmoid instead of TV-sigmoid,-0.0038,0.0337
+BEO,UBF (full: TV-sigmoid + memo + local search),0.0,
+BEO,V2 |tanh| + elite complement rule,-0.0048,0.0068
+BEO,no elite local search,-0.0019,0.0867
+BEO,no memoisation,0.0,1.0
+SMA,S2 sigmoid instead of TV-sigmoid,-0.0004,0.8215
+SMA,UBF (full: TV-sigmoid + memo + local search),0.0,
+SMA,V2 |tanh| + elite complement rule,-0.0019,0.1791
+SMA,no elite local search,-0.0029,0.2636
+SMA,no memoisation,0.0,1.0

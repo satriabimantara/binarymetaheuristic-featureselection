@@ -221,3 +221,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Study-specific: run logs (local paths), superseded caches, and the bulky raw/figure files of the first run,
+# whose stochastic transfer function was no better than random search (its tables and diagnosis are kept).
+results/*.log
+results/raw/_superseded/
+results_v1_stochastic_ubf/raw/
+results_v1_stochastic_ubf/figures/
+results_v1_stochastic_ubf/*.log

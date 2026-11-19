@@ -1,0 +1,13 @@
+algorithm,method,f1_macro,accuracy,auc_macro,n_selected,search_time_s,n_classifier_fits,cache_hits
+HOA,UBF (sign mapping + diverse init + memo + local search),0.8366,0.8675,0.9084,30.7375,9.1209,429.9,570.1
+HOA,no elite local search,0.8357,0.8682,0.9068,34.7625,11.1414,405.2375,594.7625
+HOA,no memoisation,0.8366,0.8675,0.9084,30.7375,26.7373,1000.0,0.0
+HOA,stochastic S2 sigmoid instead of sign mapping,0.8331,0.8639,0.9067,26.8625,20.8286,738.9875,261.0125
+HOA,stochastic TV-sigmoid instead of sign mapping,0.8312,0.863,0.9044,26.3375,23.026,803.8,196.2
+HOA,uniform instead of density-diverse init,0.8358,0.8655,0.9099,29.9125,14.9429,511.4,488.6
+INFO,UBF (sign mapping + diverse init + memo + local search),0.8365,0.8652,0.9097,22.0,8.7155,405.8375,594.1625
+INFO,no elite local search,0.8334,0.8644,0.9052,23.0625,11.0152,399.425,600.575
+INFO,no memoisation,0.8365,0.8652,0.9097,22.0,23.162,1000.0,0.0
+INFO,stochastic S2 sigmoid instead of sign mapping,0.8318,0.8628,0.904,21.8875,21.513,835.3,164.7
+INFO,stochastic TV-sigmoid instead of sign mapping,0.8329,0.8629,0.9043,21.2375,21.2745,908.3625,91.6375
+INFO,uniform instead of density-diverse init,0.8371,0.8658,0.9096,21.825,10.4125,386.2875,613.7125

@@ -1,0 +1,11 @@
+algorithm,method,f1_macro,accuracy,auc_macro,n_selected,search_time_s,n_classifier_fits,cache_hits
+BEO,S2 sigmoid instead of TV-sigmoid,0.8476,0.8781,0.9148,20.4,15.7906,906.8,93.2
+BEO,UBF (full: TV-sigmoid + memo + local search),0.8514,0.8803,0.916,20.8625,17.8934,931.9125,68.0875
+BEO,V2 |tanh| + elite complement rule,0.8466,0.8773,0.9124,22.275,13.7304,796.8625,203.1375
+BEO,no elite local search,0.8495,0.878,0.9177,22.8125,18.955,1026.4375,33.5625
+BEO,no memoisation,0.8514,0.8803,0.916,20.8625,18.3726,1000.0,0.0
+SMA,S2 sigmoid instead of TV-sigmoid,0.8516,0.8798,0.9184,20.8125,17.6606,951.525,48.475
+SMA,UBF (full: TV-sigmoid + memo + local search),0.8519,0.8807,0.9182,20.9625,25.4233,952.1125,47.8875
+SMA,V2 |tanh| + elite complement rule,0.85,0.8797,0.9187,20.4625,5.3284,284.5875,715.4125
+SMA,no elite local search,0.849,0.8787,0.9135,23.3,18.2246,992.6,7.4
+SMA,no memoisation,0.8519,0.8807,0.9182,20.9625,18.3169,1000.0,0.0
