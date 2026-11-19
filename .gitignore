@@ -222,10 +222,9 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# Study-specific: run logs (local paths), superseded caches, and the bulky raw/figure files of the first run,
-# whose stochastic transfer function was no better than random search (its tables and diagnosis are kept).
+# Study-specific: run logs (local paths), superseded caches and the figures of the first run
+# (stochastic transfer function); its raw runs and tables are kept for scripts/first_run_vs_sign.py.
 results/*.log
 results/raw/_superseded/
-results_v1_stochastic_ubf/raw/
 results_v1_stochastic_ubf/figures/
 results_v1_stochastic_ubf/*.log

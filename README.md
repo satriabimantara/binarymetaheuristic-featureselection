@@ -52,15 +52,22 @@ All 51 methods: `results/tables/overall_ranking.csv`. Friedman χ² = 174.9, p =
   result unchanged and makes the search 2.5–2.9× faster. The diverse initialisation and the local search have no
   significant effect on test F1.
 
-`results_v1_stochastic_ubf/` keeps the tables of the first run, which used a stochastic time-varying sigmoid: there
-the search phase was no better than random search (`ubf_diagnosis.csv`), which led to the framework above.
+- **Stochastic transfer function vs sign mapping** (`stochastic_vs_sign.csv`, 7 datasets, 70 paired runs; musk1 is
+  left out because the first run still had its identifier columns). In the first run, which used a stochastic
+  time-varying sigmoid and uniform initialisation (`results_v1_stochastic_ubf/`), only 15 of the 47 algorithms were
+  significantly better than RS; with the sign mapping 37 are. 33 algorithms reach a significantly better fitness
+  than their own first-run version and 6 a significantly worse one (ECO, EEGWO, EPO, HHO, MO, WOA).
+- **Ablation on the search fitness** (`ablation_fitness.csv`). For INFO the stochastic time-varying sigmoid worsens
+  the fitness before the local search (0.1172 → 0.1302, p < 0.001); for HOA, whose search does not beat RS, no
+  variant changes it, and its final fitness depends on the local search (0.1286 vs 0.1418 without it, p < 0.001).
 
 ## Layout
 
 ```text
 datasets/     UCI datasets as CSV
 fsbench/      experiment.py (protocol, cache), plots.py
-scripts/      make_notebooks.py, run_notebooks.py, comparison_cells.py, ablation_cells.py
+scripts/      make_notebooks.py, run_notebooks.py, comparison_cells.py, ablation_cells.py,
+              first_run_vs_sign.py, ablation_fitness.py (tables computed from the cached runs)
 notebooks/    00 protocol · 01 baselines · 02–49 one per algorithm · 90 comparison · 91 ablation (executed)
 results/      raw/ (cached runs), tables/ (CSV), figures/
 ```

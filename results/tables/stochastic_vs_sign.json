@@ -1,0 +1,26 @@
+{
+ "n_algorithms": 47,
+ "pairs": 70,
+ "mean_fitness_stochastic": 0.12933277485512995,
+ "mean_fitness_sign": 0.12056413478396172,
+ "fitness_RS": 0.13239008209647668,
+ "stochastic_beats_RS": 15,
+ "sign_beats_RS": 37,
+ "sign_worse_than_RS": [
+  "AHO",
+  "EEGWO",
+  "EPO",
+  "GCRA",
+  "HHO",
+  "WOA"
+ ],
+ "sign_better": 33,
+ "sign_worse": [
+  "ECO",
+  "EEGWO",
+  "EPO",
+  "HHO",
+  "MO",
+  "WOA"
+ ]
+}
